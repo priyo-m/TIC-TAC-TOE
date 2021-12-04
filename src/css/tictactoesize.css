@@ -1,0 +1,56 @@
+h1{
+    font-family:"fontin";
+    color:white;
+    text-align:center;
+    margin-left:29.37vw;
+    font-size: 6vmin;
+    font-variant: small-caps;
+    background-color: #8c8c8c;
+    width:42.51vw;  
+}
+
+.button{
+    background-color: #234723;
+    border: none;
+    font-family: "fontin";
+    color: white;
+    padding: 3vh 1.54vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vmin;
+    margin: 15px 1px;
+    margin-left:10vw;
+    cursor: pointer;
+    width:8.5vw;
+    height:5.97vh;
+    opacity:1.0;
+}
+
+.backbutton{
+    background-color: #234723;
+    border: none;
+    font-family: "fontin";
+    color: white;
+    padding: 3vh 1.54vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.25vmin;
+    margin-top: 12vh;
+    margin-left:42.89vw;
+    cursor: pointer;
+    width:3.86vw;
+    height:2.98vh; 
+}
+
+.button:hover, .backbutton:hover{
+    background-color:#286743;
+}
+body {
+  background-image: url('../../images/rover.jpg');
+  background-size: 100vh 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

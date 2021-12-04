@@ -1,0 +1,55 @@
+#b1{
+    background-color: #234723;
+    
+    border: none;
+    font-family: "fontin";
+    color: white;
+    padding: 3vh 1.54vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vmin;
+    margin-top: 6vh;
+    margin-left:31.22vw;
+    cursor: pointer;
+    width:12vw;
+    height:6vh;
+}
+#b2{
+    background-color: #234723;
+    border: none;
+    font-family: "fontin";
+    color: white;
+    padding: 3vh 1.54vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3vmin;
+    margin-top: 6vh;
+    margin-left:7.72vw;
+    cursor: pointer;
+    width:12vw;
+    height:6vh;
+}
+
+#heading{
+    font-family:"fontin";
+    color:white;
+    text-align:center;
+    margin-left:33.62vw;
+    font-size: 6vmin;
+    font-variant: small-caps;
+    background-color: #8c8c8c;
+    width:30.91vw;
+  
+}
+#b1:hover, #b2:hover{
+    background-color:#286743;
+}
+body {
+  background-image: url('../../images/rover.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vh 100vw;
+  background-attachment: fixed;
+  background-size: cover;
+}

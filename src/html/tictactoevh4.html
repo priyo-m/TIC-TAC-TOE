@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/tictactoevh4.css">
+  </head>
+  <body>
+    <div id = "dboard">
+    </div>
+    <div id = "lboard">
+    </div>
+    <table id = "tic">
+      <tr>
+	<td class="cell" id="0"></td>
+	<td class="cell" id="1"></td>
+	<td class="cell" id="2"></td>
+	<td class="cell" id="3"></td>
+      </tr>
+      <tr>
+	<td class="cell" id="4"></td>
+	<td class="cell" id="5"></td>
+	<td class="cell" id="6"></td>
+	<td class="cell" id="7"></td>
+      </tr>
+      <tr>
+	<td class="cell" id="8"></td>
+	<td class="cell" id="9"></td>
+	<td class="cell" id="10"></td>
+	<td class="cell" id="11"></td>
+      </tr>
+      <tr>
+	<td class="cell" id="12"></td>
+	<td class="cell" id="13"></td>
+	<td class="cell" id="14"></td>
+	<td class="cell" id="15"></td>
+      </tr>
+    </table>
+      <p id="sheading">STARTING PLAYER</p>
+      <p id="lheading">LEADERBOARD</p>
+      <table id="leaderboard">
+	<tr>
+	  <td class="lead">Player 1</td>
+	  <td class="lead">Tie</td>
+	  <td class="lead">Player 2</td>
+	</tr>
+	<tr>
+	  <td class="lead">0</td>
+	  <td class="lead">0</td>
+	  <td class="lead">0</td>
+	</tr>
+      </table>
+      <div class = "endgame">
+	<div class="text"></div>
+      </div>
+      <button onClick="startGame()" id="rbutton">Replay</button>
+      <button onClick="resetLeaderBoard()" id="resetbutton">Reset</button>
+      <a href="../../index.html" class="mbutton">MAIN MENU</a>
+      <div class="theme">
+	<button id="k" class="diff">THEMES</button>
+	<div class="dropdown">
+	  <button onClick="changeTheme(1)" class="ch">Mars</button>
+	  <button onClick="changeTheme(2)" class="ch">Light</button>
+	  <button onClick="changeTheme(3)" class="ch">Dark</button>
+	</div>
+      </div>
+      <div class="startP">
+	<button onClick="playerMove(false); startNew();" class="stp">Player 1</button>
+	<button onClick="playerMove(true); startNew();" class="stp">Player 2</button>
+      </div>
+      <script src="../javascript/tictactoevh4.js">
+      </script>
+  </body>
+</html>

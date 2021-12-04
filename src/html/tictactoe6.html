@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/tictactoe6.css">
+  </head>
+  <body>
+    <div id = "dboard">
+    </div>
+    <div id = "lboard">
+    </div>
+    <table id="tic">
+      <tr>
+	<td class="cell" id="0"></td>
+	<td class="cell" id="1"></td>
+	<td class="cell" id="2"></td>
+	<td class="cell" id="3"></td>
+	<td class="cell" id="4"></td>
+	<td class="cell" id="5"></td>
+	<td class="cell" id="6"></td>	
+      </tr>
+      <tr>
+	<td class="cell" id="7"></td>
+	<td class="cell" id="8"></td>
+	<td class="cell" id="9"></td>
+	<td class="cell" id="10"></td>
+	<td class="cell" id="11"></td>
+	<td class="cell" id="12"></td>
+	<td class="cell" id="13"></td>	
+      </tr>
+      <tr>
+	<td class="cell" id="14"></td>
+	<td class="cell" id="15"></td>
+	<td class="cell" id="16"></td>
+	<td class="cell" id="17"></td>
+	<td class="cell" id="18"></td>
+	<td class="cell" id="19"></td>
+	<td class="cell" id="20"></td>	
+      </tr>
+      <tr>
+	<td class="cell" id="21"></td>
+	<td class="cell" id="22"></td>
+	<td class="cell" id="23"></td>
+	<td class="cell" id="24"></td>
+	<td class="cell" id="25"></td>
+	<td class="cell" id="26"></td>
+	<td class="cell" id="27"></td>	
+      </tr>
+      <tr>
+	<td class="cell" id="28"></td>
+	<td class="cell" id="29"></td>
+	<td class="cell" id="30"></td>
+	<td class="cell" id="31"></td>
+	<td class="cell" id="32"></td>
+	<td class="cell" id="33"></td>
+	<td class="cell" id="34"></td>	
+      </tr>
+      <tr>
+	<td class="cell" id="35"></td>
+	<td class="cell" id="36"></td>
+	<td class="cell" id="37"></td>
+	<td class="cell" id="38"></td>
+	<td class="cell" id="39"></td>
+	<td class="cell" id="40"></td>
+	<td class="cell" id="41"></td>	
+      </tr>
+      <tr>
+	<td class="cell" id="42"></td>
+	<td class="cell" id="43"></td>
+	<td class="cell" id="44"></td>
+	<td class="cell" id="45"></td>
+	<td class="cell" id="46"></td>
+	<td class="cell" id="47"></td>
+	<td class="cell" id="48"></td>	
+      </tr>
+    </table>
+         <p id="lheading">LEADERBOARD</p>
+    <table id="leaderboard">
+      <tr>
+	<td class="lead">Human</td>
+	<td class="lead">Tie</td>
+	<td class="lead">AI</td>
+      </tr><div id = "dboard">
+    </div>
+      <tr>
+	<td class="lead">0</td>
+	<td class="lead">0</td>
+	<td class="lead">0</td>
+      </tr>
+    </table>
+    <div class = "endgame">
+      <div class="text"></div>
+    </div>
+     <p id="dheading">DIFFICULTY</p>
+    <p id="sheading">STARTING PLAYER</p>
+    <button onClick="startNew()" id="rbutton">REPLAY</button>
+    <button onClick="resetLeaderBoard()" id="resetbutton">RESET</button>
+
+    <div class="difficulty">
+      <button onClick="setDiff(0)" class="diff">EASY</button>
+      <button onClick="setDiff(1)" class="diff">MEDIUM</button>
+      <button onClick="setDiff(2)" class="diff">HARD</button>
+      <button onClick="setDiff(3)" class="diff">UNBEATABLE</button>
+    </div>
+    <a href="../../index.html" class="mbutton">MAIN MENU</a>
+    <div class="theme">
+      <button id="k" class="diff">THEMES</button>
+      <div class="dropdown">
+	<button onClick="changeTheme(1)" class="ch">Mars</button>
+	<button onClick="changeTheme(2)" class="ch">Light</button>
+	<button onClick="changeTheme(3)" class="ch">Dark</button>
+      </div>
+    </div>
+    <div class="startP">
+    <button onClick="playerMove(false); startNew();" class="stp">AI</button>
+    <button onClick="playerMove(true); startNew();" class="stp">HUMAN</button>
+    </div>
+    <button onClick="showHint()" id="hint">HINT</button>
+    <p id="maxhint">Maximum 3 hints!</p>
+    <script src="../javascript/tictactoe6.js">
+    </script>
+  </body>
+</html>
